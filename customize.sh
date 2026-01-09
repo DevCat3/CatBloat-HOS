@@ -211,8 +211,7 @@ com.facebook.system
 com.facebook.appmanager 
 com.facebook.services 
 com.mi.globalbrowser
-com.xiaomi.payment 
-com.miui.accessibility 
+com.xiaomi.payment
 com.xiaomi.mircs 
 com.miui.videoplayer 
 com.miui.micloudsync 
@@ -231,8 +230,7 @@ com.miui.miservice
 com.android.stk 
 com.tencent.soter.soterserver 
 com.google.android.tts 
-com.google.mainline.telemetry 
-com.google.android.accessibility.switchaccess 
+com.google.mainline.telemetry  
 com.xiaomi.discover 
 com.miui.daemon 
 com.google.android.gms.supervision 
