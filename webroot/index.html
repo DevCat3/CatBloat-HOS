@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CatBloat HOS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="scripts.js"></script>
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <main class="container">
+    <div class="title-bar">
+      <h1 id="module-name" class="title">CatBloat HOS</h1>
+      <label class="theme-switch" title="Toggle light/dark mode">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <p class="subtitle">Disable or re-enable bloatware instantly</p>
+
+    <div class="card">
+      <div class="button-row">
+        <button id="disable-btn" class="btn danger">Disable All Bloatware</button>
+        <button id="enable-btn" class="btn success">Enable All Bloatware</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top: 0; color: var(--title);">Single App Control</h3>
+      <input type="text" id="package-input" placeholder="Enter package name (e.g., com.example.app)" />
+      <div class="button-row single-app-buttons">
+        <button id="disable-single-btn" class="btn danger">Disable Single App</button>
+        <button id="enable-single-btn" class="btn success">Enable Single App</button>
+      </div>
+    </div>
+
+    <div class="card" id="disabled-apps-card">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="margin: 0; color: var(--title);">Currently Disabled Apps</h3>
+        <button id="refresh-apps-btn" class="btn btn-sm danger" title="Refresh list">
+          🔄 Refresh
+        </button>
+      </div>
+      <div id="disabled-apps-list" class="apps-list" style="margin-top: 1rem;">
+        <div class="app-item">Click refresh to load list...</div>
+      </div>
+    </div>
+
+    <div class="card terminal">
+      <div class="terminal-header">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="term-title">Terminal Output</span>
+        <button id="clear-output" class="clear-btn">Clear</button>
+      </div>
+      <div class="terminal-body" id="output-log"></div>
+    </div>
+  </main>
+</body>
+</html>
