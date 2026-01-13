@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "versionCode": 1,
-  "zipUrl": "https://github.com/DevCat3/CatBloat-HOS/releases/download/v1.0/CatBloat-HOS-V1.0.zip",
-  "changelog": "## v1.0.0 - Initial Release\n\n✨ Features:\n- Modern WebUI with ksuwebui framework\n- Full compatibility with Magisk, KernelSU, Apatch & MMRL\n- Disable/enable all bloatware in one click\n- Single app control with package name input\n- Real-time terminal output\n- Dark/Light theme support\n- Disabled apps list management\n- Smooth animations and responsive design\n\n🔧 Supported Platforms:\n- Magisk\n- KernelSU\n- Apatch\n- MMRL\n\n📱 Optimized for Xiaomi HyperOS devices"
+  "version": "2.0",
+  "versionCode": 2,
+  "zipUrl": "https://github.com/DevCat3/CatBloat-HOS/releases/download/2.0/CatBloat-HOS-V2.0.zip",
+  "changelog": "## v2.0 - Initial Release\n\n✨ Features:\n- Modern WebUI with ksuwebui framework\n- Full compatibility with Magisk, KernelSU, Apatch & MMRL\n- Disable/enable all bloatware in one click\n- Single app control with package name input\n- Real-time terminal output\n- Dark/Light theme support\n- Disabled apps list management\n- Smooth animations and responsive design\n\n🔧 Supported Platforms:\n- Magisk\n- KernelSU\n- Apatch\n- MMRL\n\n📱 Optimized for Xiaomi HyperOS devices"
 }

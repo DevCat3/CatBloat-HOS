@@ -27,25 +27,43 @@
       </div>
     </div>
 
-    <div class="card">
-      <h3 style="margin-top: 0; color: var(--title);">Single App Control</h3>
-      <input type="text" id="package-input" placeholder="Enter package name (e.g., com.example.app)" />
-      <div class="button-row single-app-buttons">
-        <button id="disable-single-btn" class="btn danger">Disable Single App</button>
-        <button id="enable-single-btn" class="btn success">Enable Single App</button>
-      </div>
-    </div>
-
-    <div class="card" id="disabled-apps-card">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <h3 style="margin: 0; color: var(--title);">Currently Disabled Apps</h3>
+    <div class="card" id="apps-card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3 style="margin: 0; color: var(--title);">All Apps</h3>
         <button id="refresh-apps-btn" class="btn btn-sm danger" title="Refresh list">
           🔄 Refresh
         </button>
       </div>
-      <div id="disabled-apps-list" class="apps-list" style="margin-top: 1rem;">
+      
+      <input type="text" id="search-input" placeholder="🔍 Search apps by package name..." />
+      
+      <div id="apps-list" class="apps-list" style="margin-top: 1rem;">
         <div class="app-item">Click refresh to load list...</div>
       </div>
+    </div>
+
+    <div class="card" id="google-services-card">
+      <h3 style="margin-top: 0; color: var(--title); margin-bottom: 1rem;">Google Services Control</h3>
+      <p style="opacity: 0.8; font-size: 0.9rem; margin-bottom: 1rem;">Toggle Google Play Services components to save battery</p>
+      
+      <div class="button-row">
+        <button id="google-aggressive-btn" class="btn danger">🔶 Aggressive Mode</button>
+        <button id="google-safe-btn" class="btn warning">🔷 Safe Mode</button>
+        <button id="google-battery-btn" class="btn battery">🔋 Battery Saver</button>
+      </div>
+      
+      <div class="button-row" style="margin-top: 1rem;">
+        <button id="google-enable-btn" class="btn success">✅ Enable All Google Services</button>
+      </div>
+      
+      <details style="margin-top: 1rem; padding: 0.5rem; border: 1px solid var(--border); border-radius: 8px;">
+        <summary style="cursor: pointer; font-weight: 600;">ℹ️ Mode Information</summary>
+        <div style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">
+          <p><strong>🔶 Aggressive:</strong> Disables 200+ services (May break some Google features)</p>
+          <p><strong>🔷 Safe:</strong> Disables only safe-to-disable services</p>
+          <p><strong>🔋 Battery Saver:</strong> Restricts Google Play Services background activity</p>
+        </div>
+      </details>
     </div>
 
     <div class="card terminal">
